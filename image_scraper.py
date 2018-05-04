@@ -37,7 +37,7 @@ newname = 'NEW_IMAGE_NAME.png'
 os.rename('GIVE_IMAGE_NAME.png', timestr+'_'+newname)
 
 
-# move the Image to a network path for storage
+# move the Image to another directory
 source_path = r"/LOCAL_PATH_OF_THIS_PYTHON_FILE/"
 source_files = os.listdir(source_path)
 dest_path = r"/LOCAL_OR_NETWORK_PATH_TO_MOVE_IMAGE_TO/"
