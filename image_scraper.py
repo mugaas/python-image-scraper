@@ -32,7 +32,7 @@ with open("GIVE_IMAGE_NAME.png",'wb') as f:
     # to a new file in binary mode.
     f.write(r.content)
 
-# rename the file to a new file name preceeded with a datetime of YYYYMMDD
+# rename the file to a new file name preceeded with a datetime
 newname = 'NEW_IMAGE_NAME.png'
 os.rename('GIVE_IMAGE_NAME.png', timestr+'_'+newname)
 
