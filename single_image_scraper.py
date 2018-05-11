@@ -1,14 +1,13 @@
 #-------------------------------------------------------------------------------
 # Name:        Website Single Image Scraper
 # Purpose:     Reaches out to an Image URL path, takes the image and stores it with a new name.
-#              Options are available to rename the file, and add a datetime string.
-#              Options are available to then move the file to a different location.
+#              Options: User Input; Command Line Argument; Static Path
 #
 # Author:      rdahlin
 #
 # Created:     05/04/2018
 # Copyright:   (c) rdahlin 2018
-# Written In:  Python 2.7.15
+# Written In:  Python 3.5
 #-------------------------------------------------------------------------------
 
 # imported libraries
@@ -18,10 +17,19 @@ import time
 import shutil
 import sys
 
-# variables
+# time variable
 timestr = time.strftime("%Y%m%d")
-image_url = sys.argv[1] # command line argument 1 / enter URL
 
+# User Input for URL
+image_url = input("Please Enter URL: ")
+print(image_url)
+input("If URL looks correct, press ENTER to continue. If not, press CTRL+C")
+
+# Command Line Argument for URL
+#image_url = sys.argv[1]
+
+# Static Image Path
+#image_url = "https://www.WEBSITE.com/IMAGE.PNG"  
  
 # URL of the image to be downloaded is defined as image_url
 r = requests.get(image_url) # create HTTP response object
