@@ -20,7 +20,7 @@ import sys
 
 # variables
 timestr = time.strftime("%Y%m%d")
-image_url = "https://www.WEBSITE.com/IMAGE.PNG"
+image_url = sys.argv[1] # command line argument 1 / enter URL
 
  
 # URL of the image to be downloaded is defined as image_url
