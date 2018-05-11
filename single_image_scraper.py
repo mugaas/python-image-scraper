@@ -16,6 +16,7 @@ import requests
 import os
 import time
 import shutil
+import sys
 
 # variables
 timestr = time.strftime("%Y%m%d")
