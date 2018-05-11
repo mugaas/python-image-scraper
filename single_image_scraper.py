@@ -8,7 +8,7 @@
 #
 # Created:     05/04/2018
 # Copyright:   (c) rdahlin 2018
-# Written In:  Pythong 2.7.15
+# Written In:  Python 2.7.15
 #-------------------------------------------------------------------------------
 
 # imported libraries
