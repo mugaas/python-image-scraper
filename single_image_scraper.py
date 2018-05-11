@@ -7,7 +7,7 @@
 #
 # Created:     05/04/2018
 # Copyright:   (c) rdahlin 2018
-# Written In:  Python 3.5
+# Version:     Python 3.6.5
 #-------------------------------------------------------------------------------
 
 # imported libraries
