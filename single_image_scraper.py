@@ -36,16 +36,13 @@ r = requests.get(image_url) # create HTTP response object
  
 # send a HTTP request to the server and save
 # the HTTP response in a response object called r
-with open("GIVE_IMAGE_NAME.png",'wb') as f:
+# image name is prefixed with date (YYYYMMDD)
+newname = 'NEW_IMAGE_NAME.png'
+with open(timestr+'_'+newname,'wb') as f:
   
     # write the contents of the response (r.content)
     # to a new file in binary mode.
     f.write(r.content)
-
-# rename the file to a new file name preceeded with a datetime
-newname = 'NEW_IMAGE_NAME.png'
-os.rename('GIVE_IMAGE_NAME.png', timestr+'_'+newname)
-
 
 # move the Image to another directory
 source_path = r"/LOCAL_PATH_OF_THIS_PYTHON_FILE/"
